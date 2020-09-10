@@ -23,6 +23,9 @@ void Client::on_btnConnect_clicked()
         server->connectToHost(QHostAddress::LocalHost, port,QIODevice::WriteOnly);
         if(server->waitForConnected(1000) == false )
             QMessageBox::critical(this, "Error","Server is not allowed");
+        else
+            qDebug() << "COnnection successfully to " <<
+                        QString::number(QHostAddress::LocalHost) <<" "<< QString::number(this->port);
     }
 }
 

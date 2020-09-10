@@ -47,7 +47,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Send</string>
+     <string>Connect</string>
     </property>
    </widget>
   </widget>
